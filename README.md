@@ -1,1 +1,1 @@
-# VPNServerSynth
+# VPNServerLightSynth
