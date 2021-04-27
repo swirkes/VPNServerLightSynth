@@ -91,7 +91,7 @@ SynthDef('fullkickdrum', {
    }).add;
 
 SynthDef('clap', {
-        var out=6, clickosc, clickenv, clickoutput;
+        var out=0, clickosc, clickenv, clickoutput;
 
         clickosc = {LPF.ar(WhiteNoise.ar(1),1500)};
         clickenv = {Line.ar(1, 0, 0.12)};

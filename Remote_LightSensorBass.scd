@@ -1,10 +1,16 @@
-  //-------------------------//
- //        boot up          //
+   //-------------------------//
+  //    boot up and connect  //
+ //     to remote server    //
 //-------------------------//
-s.boot;
-s.scope;
+(
+o = ServerOptions.new;
+o.maxLogins = 8;
+s = Server.remote(\remote, NetAddr("192.168.1.70", 57110), o, 1);
+// set to correct address and port
+s.makeWindow; // make a window for monitoring.
+//**CLICK [-> default] BUTTON IN POP-UP WINDOW**//
+)
 
-//~port.read;
   //-------------------------//
  //  connect with arduino   //
 //-------------------------//

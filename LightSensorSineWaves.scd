@@ -27,9 +27,11 @@ SerialPort.devices;
 ~port = SerialPort.new("/dev/tty.usbmodem1422101", 9600);
 
 
-   //-------------------------//
-  //  process arduino input  //
- //   and store in ~val     //
+     //-------------------------//
+    //  process arduino input  //
+   //   and store in ~val     //
+  // use a black usb port
+ //if blue ones don't work                     //
 //-------------------------//
 (
 ~charArray = [];
